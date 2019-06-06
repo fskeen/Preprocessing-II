@@ -2,18 +2,18 @@
 
 nav {
     width: 100%;
-    // max-width: 800px;
-    border-bottom: 2px dashed @navigation-border;
+    border-bottom: @navigation-border;
     padding: 3rem 0 1.6rem 0;
 
     .nav-container {
-       .flex(row, space-between, center); 
+       .flex(row, space-between, center);
        max-width: 800px;
        margin: auto;
     }
 
     h2 {
         font-size: 4rem;
+        padding: 1rem;
     }
 
     .nav-items-container {
@@ -25,7 +25,33 @@ nav {
     a {
         margin: 0 2rem .5rem 1.1rem;
         color: @font-color;
-        font-size: 1.6rem;
+        font-size:  1.6rem;
         font-weight: 600;
+    }
+
+
+    @media @mobile {
+        padding: 0;
+        margin: 0;
+
+        .nav-container {
+            .flex(column, flex-start, center);
+            padding-left: 2rem;
+        }
+
+        h2 {
+            font-size: 3.2rem;
+            padding-top: 1.5rem;
+        }
+
+        .nav-items-container {
+            .flex(row, space-between, space-between);
+        }
+        a {
+            margin: 0 3rem;
+            padding-top: .5rem;
+            padding-bottom: .5rem;
+        }
+        
     }
 }
