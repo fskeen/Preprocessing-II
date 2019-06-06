@@ -159,9 +159,6 @@ p {
   font-size: 1.6rem;
   padding-bottom: 10px;
 }
-a {
-  text-decoration: none;
-}
 img {
   max-width: 100%;
   height: auto;
@@ -170,35 +167,6 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
-}
-nav {
-  width: 100%;
-  border-bottom: 2px dashed #C0C0C0;
-  padding: 3rem 0 1.6rem 0;
-}
-nav .nav-container {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 800px;
-  margin: auto;
-}
-nav h2 {
-  font-size: 4rem;
-}
-nav .nav-items-container {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 1rem 0.5rem 1rem;
-}
-nav a {
-  margin: 0 2rem 0.5rem 1.1rem;
-  color: #212529;
-  font-size: 1.6rem;
-  font-weight: 600;
 }
 .footer {
   width: 100%;
